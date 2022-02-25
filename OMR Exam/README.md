@@ -38,7 +38,7 @@ As the forms will be printed, filled by the students and then scanned again, we 
 Our code takes in a '.txt' containing all the answers. We are storing these answers in a python dictionary where question numbers are the keys and the answers are the values to those respective keys.<br> Now coming to the injection part, we are using a piece of the image from the left hand top corner to inject the answers. Keeping the relative position constant for all options (A,B,C,D,E), we iterate through the entire block (100 x 1500 pixels). Initial pixel value for all pixels inside this block is 255 as it just a white box. For every extracted answer from the dictionary, we changed the pixel values in a small 10x10 pixel box to 0. This gave us a black 10x10 box for every question. For questions having multiple answers, we changed the pixel values of multiple 10x10 boxes to 0.
 <br>We also added a small 10x10 pixel box of 0 values,before question 1, to create a reference point during the extraction process. 
 <br><br>Below is an example of this injection process:
-<br>![Alt text](https://github.iu.edu/cs-b657-sp2022/athakulk-sparanjp-bmcshane-a1/blob/main/injection_output/injected_box.jpg)
+<br>![Alt text](https://github.com/atharva246/Computer-Vision/blob/main/OMR%20Exam/injection_output/injected_box.jpg)
 
 
 **Discarded Approaches:**<br>
